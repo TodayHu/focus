@@ -1,8 +1,7 @@
-A simple Apple Watch app that helps you focus on whatever you are doing.
+A simple Apple Watch app made to demonstrate the use of:
 
-Demonstrates the use of:
+- Apple WatchKit
+- [WKInterfaceImage](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceImage_class)
+- [WKInterfaceButton](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceButton_class) with custom background image
 
-- Apple WatchKit.
-- [WKInterfaceButton](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceButton_class/index.html#//apple_ref/occ/cl/WKInterfaceButton) with custom background image.
-- Animation in Apple Watch.
-
+This app helps you stay focused on whatever task you are working on. How? Simple. You turn it on, then stay focused.
