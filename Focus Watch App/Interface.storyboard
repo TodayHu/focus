@@ -10,7 +10,16 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Focus_Watch_App" customModuleProvider="target">
                     <items>
-                        <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="speed" id="Ech-lN-e4P"/>
+                        <group width="1" height="0.75" alignment="left" id="8zD-VG-pau">
+                            <items>
+                                <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="speed-white-small" id="Ech-lN-e4P"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.25" alignment="left" hasDetent="YES" id="fu6-uk-djt">
+                            <items>
+                                <button width="40" height="1" alignment="center" backgroundImage="power-button-green" id="QAX-gN-XId"/>
+                            </items>
+                        </group>
                     </items>
                 </controller>
             </objects>
