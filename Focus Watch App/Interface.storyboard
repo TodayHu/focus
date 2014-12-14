@@ -17,7 +17,11 @@
                         </group>
                         <group width="1" height="0.25" alignment="left" hasDetent="YES" id="fu6-uk-djt">
                             <items>
-                                <button width="40" height="1" alignment="center" backgroundImage="power-button-green" id="QAX-gN-XId"/>
+                                <button width="40" height="1" alignment="center" backgroundImage="power-button-green" id="QAX-gN-XId">
+                                    <connections>
+                                        <action selector="buttonTapped" destination="AgC-eL-Hgc" id="p3V-sU-JhO"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>

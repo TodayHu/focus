@@ -32,4 +32,9 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func buttonTapped() {
+        NSLog("button tapped.");
+    }
+    
+
 }
