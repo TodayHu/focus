@@ -25,6 +25,10 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="powerButton" destination="QAX-gN-XId" id="gO6-XX-83d"/>
+                        <outlet property="statusImage" destination="Ech-lN-e4P" id="Txk-hY-ujg"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

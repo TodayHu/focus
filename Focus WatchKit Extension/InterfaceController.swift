@@ -12,6 +12,10 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var statusImage: WKInterfaceImage!
+    @IBOutlet var powerButton: WKInterfaceButton!
+    var isFocused = false
+
     override init(context: AnyObject?) {
         // Initialize variables here.
         super.init(context: context)
@@ -33,8 +37,18 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func buttonTapped() {
-        NSLog("button tapped.");
+        NSLog("button tapped.")
+        isFocused = !isFocused
+        updateUI()
     }
     
-
+    func updateUI() {
+        if isFocused {
+            statusImage.setImageNamed("speed-orange")
+            powerButton.setBackgroundImageNamed("power-button-red")
+        } else {
+            statusImage.setImageNamed("speed-white-small")
+            powerButton.setBackgroundImageNamed("power-button-green")
+        }
+    }
 }
