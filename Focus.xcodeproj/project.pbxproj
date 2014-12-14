@@ -13,6 +13,14 @@
 		AB3550261A3D6A28003D534C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB3550241A3D6A28003D534C /* LaunchScreen.xib */; };
 		AB3550321A3D6A28003D534C /* FocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3550311A3D6A28003D534C /* FocusTests.swift */; };
 		AB35503C1A3D6B37003D534C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = AB35503B1A3D6B37003D534C /* README.md */; };
+		AB3550441A3D6ECD003D534C /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3550431A3D6ECD003D534C /* WatchKit.framework */; };
+		AB35504A1A3D6ECD003D534C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3550491A3D6ECD003D534C /* InterfaceController.swift */; };
+		AB35504C1A3D6ECD003D534C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB35504B1A3D6ECD003D534C /* NotificationController.swift */; };
+		AB35504E1A3D6ECD003D534C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB35504D1A3D6ECD003D534C /* Images.xcassets */; };
+		AB3550521A3D6ECD003D534C /* Focus Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = AB3550511A3D6ECD003D534C /* Focus Watch App.app */; };
+		AB3550591A3D6ECD003D534C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3550581A3D6ECD003D534C /* Interface.storyboard */; };
+		AB35505B1A3D6ECD003D534C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB35505A1A3D6ECD003D534C /* Images.xcassets */; };
+		AB35505E1A3D6ECD003D534C /* Focus WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB3550411A3D6ECD003D534C /* Focus WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +31,35 @@
 			remoteGlobalIDString = AB3550151A3D6A28003D534C;
 			remoteInfo = Focus;
 		};
+		AB3550531A3D6ECD003D534C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB35500E1A3D6A28003D534C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB3550501A3D6ECD003D534C;
+			remoteInfo = "Focus Watch App";
+		};
+		AB35505C1A3D6ECD003D534C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB35500E1A3D6A28003D534C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB3550401A3D6ECD003D534C;
+			remoteInfo = "Focus WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB3550651A3D6ECD003D534C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AB35505E1A3D6ECD003D534C /* Focus WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AB3550161A3D6A28003D534C /* Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +72,17 @@
 		AB3550301A3D6A28003D534C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB3550311A3D6A28003D534C /* FocusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTests.swift; sourceTree = "<group>"; };
 		AB35503B1A3D6B37003D534C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AB3550411A3D6ECD003D534C /* Focus WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Focus WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3550431A3D6ECD003D534C /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		AB3550471A3D6ECD003D534C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB3550481A3D6ECD003D534C /* PushNotificationPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PushNotificationPayload.json; sourceTree = "<group>"; };
+		AB3550491A3D6ECD003D534C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AB35504B1A3D6ECD003D534C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AB35504D1A3D6ECD003D534C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB3550511A3D6ECD003D534C /* Focus Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Focus Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3550571A3D6ECD003D534C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB3550581A3D6ECD003D534C /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		AB35505A1A3D6ECD003D534C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +100,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB35503E1A3D6ECD003D534C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3550441A3D6ECD003D534C /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +117,9 @@
 				AB35503B1A3D6B37003D534C /* README.md */,
 				AB3550181A3D6A28003D534C /* Focus */,
 				AB35502E1A3D6A28003D534C /* FocusTests */,
+				AB3550451A3D6ECD003D534C /* Focus WatchKit Extension */,
+				AB3550551A3D6ECD003D534C /* Focus Watch App */,
+				AB3550421A3D6ECD003D534C /* Frameworks */,
 				AB3550171A3D6A28003D534C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +129,8 @@
 			children = (
 				AB3550161A3D6A28003D534C /* Focus.app */,
 				AB35502B1A3D6A28003D534C /* FocusTests.xctest */,
+				AB3550411A3D6ECD003D534C /* Focus WatchKit Extension.appex */,
+				AB3550511A3D6ECD003D534C /* Focus Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +172,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AB3550421A3D6ECD003D534C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB3550431A3D6ECD003D534C /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB3550451A3D6ECD003D534C /* Focus WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AB3550491A3D6ECD003D534C /* InterfaceController.swift */,
+				AB35504B1A3D6ECD003D534C /* NotificationController.swift */,
+				AB35504D1A3D6ECD003D534C /* Images.xcassets */,
+				AB3550461A3D6ECD003D534C /* Supporting Files */,
+			);
+			path = "Focus WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AB3550461A3D6ECD003D534C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB3550471A3D6ECD003D534C /* Info.plist */,
+				AB3550481A3D6ECD003D534C /* PushNotificationPayload.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB3550551A3D6ECD003D534C /* Focus Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				AB3550581A3D6ECD003D534C /* Interface.storyboard */,
+				AB35505A1A3D6ECD003D534C /* Images.xcassets */,
+				AB3550561A3D6ECD003D534C /* Supporting Files */,
+			);
+			path = "Focus Watch App";
+			sourceTree = "<group>";
+		};
+		AB3550561A3D6ECD003D534C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB3550571A3D6ECD003D534C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +228,12 @@
 				AB3550121A3D6A28003D534C /* Sources */,
 				AB3550131A3D6A28003D534C /* Frameworks */,
 				AB3550141A3D6A28003D534C /* Resources */,
+				AB3550651A3D6ECD003D534C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AB35505D1A3D6ECD003D534C /* PBXTargetDependency */,
 			);
 			name = Focus;
 			productName = Focus;
@@ -150,6 +258,39 @@
 			productReference = AB35502B1A3D6A28003D534C /* FocusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AB3550401A3D6ECD003D534C /* Focus WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3550621A3D6ECD003D534C /* Build configuration list for PBXNativeTarget "Focus WatchKit Extension" */;
+			buildPhases = (
+				AB35503D1A3D6ECD003D534C /* Sources */,
+				AB35503E1A3D6ECD003D534C /* Frameworks */,
+				AB35503F1A3D6ECD003D534C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB3550541A3D6ECD003D534C /* PBXTargetDependency */,
+			);
+			name = "Focus WatchKit Extension";
+			productName = "Focus WatchKit Extension";
+			productReference = AB3550411A3D6ECD003D534C /* Focus WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		AB3550501A3D6ECD003D534C /* Focus Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB35505F1A3D6ECD003D534C /* Build configuration list for PBXNativeTarget "Focus Watch App" */;
+			buildPhases = (
+				AB35504F1A3D6ECD003D534C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Focus Watch App";
+			productName = "Focus Watch App";
+			productReference = AB3550511A3D6ECD003D534C /* Focus Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +306,12 @@
 					AB35502A1A3D6A28003D534C = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = AB3550151A3D6A28003D534C;
+					};
+					AB3550401A3D6ECD003D534C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					AB3550501A3D6ECD003D534C = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -183,6 +330,8 @@
 			targets = (
 				AB3550151A3D6A28003D534C /* Focus */,
 				AB35502A1A3D6A28003D534C /* FocusTests */,
+				AB3550401A3D6ECD003D534C /* Focus WatchKit Extension */,
+				AB3550501A3D6ECD003D534C /* Focus Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +350,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB35503F1A3D6ECD003D534C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3550521A3D6ECD003D534C /* Focus Watch App.app in Resources */,
+				AB35504E1A3D6ECD003D534C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB35504F1A3D6ECD003D534C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3550591A3D6ECD003D534C /* Interface.storyboard in Resources */,
+				AB35505B1A3D6ECD003D534C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +392,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB35503D1A3D6ECD003D534C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB35504C1A3D6ECD003D534C /* NotificationController.swift in Sources */,
+				AB35504A1A3D6ECD003D534C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +408,16 @@
 			isa = PBXTargetDependency;
 			target = AB3550151A3D6A28003D534C /* Focus */;
 			targetProxy = AB35502C1A3D6A28003D534C /* PBXContainerItemProxy */;
+		};
+		AB3550541A3D6ECD003D534C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB3550501A3D6ECD003D534C /* Focus Watch App */;
+			targetProxy = AB3550531A3D6ECD003D534C /* PBXContainerItemProxy */;
+		};
+		AB35505D1A3D6ECD003D534C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB3550401A3D6ECD003D534C /* Focus WatchKit Extension */;
+			targetProxy = AB35505C1A3D6ECD003D534C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -328,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Focus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Focus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,6 +566,62 @@
 			};
 			name = Release;
 		};
+		AB3550601A3D6ECD003D534C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Focus_WatchKit_Extension;
+				INFOPLIST_FILE = "Focus Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		AB3550611A3D6ECD003D534C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = Focus_WatchKit_Extension;
+				INFOPLIST_FILE = "Focus Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		AB3550631A3D6ECD003D534C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Focus WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AB3550641A3D6ECD003D534C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Focus WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,6 +647,22 @@
 			buildConfigurations = (
 				AB3550391A3D6A28003D534C /* Debug */,
 				AB35503A1A3D6A28003D534C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB35505F1A3D6ECD003D534C /* Build configuration list for PBXNativeTarget "Focus Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3550601A3D6ECD003D534C /* Debug */,
+				AB3550611A3D6ECD003D534C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB3550621A3D6ECD003D534C /* Build configuration list for PBXNativeTarget "Focus WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3550631A3D6ECD003D534C /* Debug */,
+				AB3550641A3D6ECD003D534C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

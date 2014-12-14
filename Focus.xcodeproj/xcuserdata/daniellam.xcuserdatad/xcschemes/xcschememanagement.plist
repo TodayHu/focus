@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Focus Watch App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Focus.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>AB35502A1A3D6A28003D534C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB3550501A3D6ECD003D534C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
